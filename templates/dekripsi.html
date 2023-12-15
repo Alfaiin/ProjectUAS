@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kriptografi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="center">
+    <h1>Decryption</h1>
+    <form method="post" action="/dekrips">
+    <div class="inputbox">
+      <input type="text" name="text" id="name" class="box" required="required">
+      <span>Input Text</span>
+    </div>
+    <div class="inputbox">
+      <input type="text" name="key_vigenere" id="key_vigenere" class="box" required="required">
+      <span>Key Vigenere</span>
+    </div>
+    <div class="inputbox">
+      <input type="number" name="key_caesar" id="key_caesar" class="box" min="0" max="25" required="required">
+      <span>Key Caesar</span>
+    </div>
+    <div class="inputbox">
+      <input type="submit" value="Decryption" id="submit">
+    </div>
+    </form>
+  </div>
+</body>
+</html>
